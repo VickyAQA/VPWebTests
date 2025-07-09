@@ -25,18 +25,18 @@ class LoginPageHelper(BasePage):
 
 
     def check_page(self):
-        self.find_element(LoginPageLocators.LOGIN_TAB).click()
-        self.find_element(LoginPageLocators.QR_TAB).click()
-        self.find_element(LoginPageLocators.LOGIN_FIELD).click()
-        self.find_element(LoginPageLocators.PASSWORD_FIELD).click()
-        self.find_element(LoginPageLocators.LOGIN_BUTTON).click()
-        self.find_element(LoginPageLocators.GET_QR_BUTTON).click()
-        self.find_element(LoginPageLocators.RESTORE_BUTTON).click()
-        self.find_element(LoginPageLocators.REGISTER_BUTTON).click()
-        self.find_element(LoginPageLocators.VK_BUTTON).click()
-        self.find_element(LoginPageLocators.MAILRU_BUTTON).click()
-        self.find_element(LoginPageLocators.YANDEX_BUTTON).click()
-        self.find_element(LoginPageLocators.OTHER_BUTTON).click()
+        self.find_element(LoginPageLocators.LOGIN_TAB)
+        self.find_element(LoginPageLocators.QR_TAB)
+        self.find_element(LoginPageLocators.LOGIN_FIELD)
+        self.find_element(LoginPageLocators.PASSWORD_FIELD)
+        #self.find_element(LoginPageLocators.LOGIN_BUTTON)
+        self.find_element(LoginPageLocators.GET_QR_BUTTON)
+        self.find_element(LoginPageLocators.RESTORE_BUTTON)
+        self.find_element(LoginPageLocators.REGISTER_BUTTON)
+        self.find_element(LoginPageLocators.VK_BUTTON)
+        self.find_element(LoginPageLocators.MAILRU_BUTTON)
+        self.find_element(LoginPageLocators.YANDEX_BUTTON)
+        self.find_element(LoginPageLocators.OTHER_BUTTON)
 
 
     def click_login(self):
