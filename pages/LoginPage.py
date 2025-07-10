@@ -14,7 +14,6 @@ class LoginPageLocators:
     VK_BUTTON = (By.XPATH, '//*[@data-l="t,vkc"]')
     MAILRU_BUTTON = (By.XPATH, '//*[@data-l="t,mailru"]')
     YANDEX_BUTTON = (By.XPATH, '//*[@data-l="t,yandex"]')
-    OTHER_BUTTON = (By.XPATH, '//*[data-l="t,other"]')
     ERROR_TEXT = (By.XPATH, '//*[@class="input-e login_error"]')
 
 
@@ -29,14 +28,14 @@ class LoginPageHelper(BasePage):
         self.find_element(LoginPageLocators.QR_TAB)
         self.find_element(LoginPageLocators.LOGIN_FIELD)
         self.find_element(LoginPageLocators.PASSWORD_FIELD)
-        #self.find_element(LoginPageLocators.LOGIN_BUTTON)
+        self.find_element(LoginPageLocators.LOGIN_BUTTON)
         self.find_element(LoginPageLocators.GET_QR_BUTTON)
         self.find_element(LoginPageLocators.RESTORE_BUTTON)
         self.find_element(LoginPageLocators.REGISTER_BUTTON)
         self.find_element(LoginPageLocators.VK_BUTTON)
         self.find_element(LoginPageLocators.MAILRU_BUTTON)
         self.find_element(LoginPageLocators.YANDEX_BUTTON)
-        self.find_element(LoginPageLocators.OTHER_BUTTON)
+
 
 
     def click_login(self):
