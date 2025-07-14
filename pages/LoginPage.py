@@ -1,4 +1,4 @@
-from pages.BasePage import BasePage
+from pages.BasePage import BasePageHelper
 from selenium.webdriver.common.by import By
 import allure
 
@@ -21,7 +21,7 @@ class LoginPageLocators:
     PROFILE_RECOVERY_BUTTON = (By.NAME, 'st.go_to_recovery')
 
 
-class LoginPageHelper(BasePage):
+class LoginPageHelper(BasePageHelper):
     def __init__(self, driver):
         self.driver = driver
         self.check_page()
@@ -72,11 +72,3 @@ class LoginPageHelper(BasePage):
     def click_registration(self):
         self.attach_screenshot()
         self.find_element(LoginPageLocators.REGISTER_BUTTON).click()
-
-
-
-
-
-
-
-
